@@ -51,7 +51,7 @@ function App() {
       <h1>TIC <span className='text-green'>TAC</span> TOE</h1>
       <Message winner={winner} current={current}/>
       <Board board={current.board} handleBoardState={handleBoardState} winningSquares={winningSquares} />
-      <button type='button' onClick={newGame} className={`btn-reset ${winner ? 'actie' : ''}`}>Start New Game</button>
+      <button type='button' onClick={newGame} className={`btn-reset ${winner ? 'active' : ''}`}>Start New Game</button>
       <h2 style={{fontWeight: 'bold'}}>Current Game History</h2>
       <History history={history} moveTo={moveTo} currentMove={currentMove}/>
       <div className="bg-balls" />
